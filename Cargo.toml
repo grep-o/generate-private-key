@@ -1,0 +1,15 @@
+[package]
+name = "generate-private-key"
+version = "0.1.0"
+edition = "2021"
+authors = ["Onik"]
+rust-version = "1.81.0"
+repository = "https://github.com/os-finery/generate-private-key"
+
+[dependencies]
+rand = "0.8" # For secure random number generation
+secp256k1 = "0.30.0" # For working with Ethereum's elliptic curve
+tiny-keccak = { version = "2.0", features = [
+    "keccak",
+] } # For hashing with Keccak (used by Ethereum)
+hex = "0.4.3"
