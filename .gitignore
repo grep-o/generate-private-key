@@ -1,11 +1,4 @@
-# Ignore everything in target directory
-/target/*
-
-# But keep the release executable
-!/target/release/*.exe
-!/target/release/generate-private-key
-
-# Other common Rust ignores
+/target
 **/*.rs.bk
 *.pdb
 Cargo.lock
